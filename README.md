@@ -1,4 +1,4 @@
-# WDI-PROJECT-3 - [team:up](http://bytemeteamup.herokuapp.com)
+# GA WDI24 Project 3 - [team:up](http://bytemeteamup.herokuapp.com)
 
 ## Local Setup
 1. Clone or download the repository and navigate to `WDI_TEAM_PROJECT` in terminal.
