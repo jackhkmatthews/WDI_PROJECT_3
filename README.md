@@ -87,7 +87,7 @@ The user is able to select the required roles for their new project.  Once a rol
 
 This was achieved with AngularJS's two-way data binding. The project object (which is later saved to the database) is being directly interacted with by the user, once a role is selected the view automatically updates to the change in the data / model.
 
-Again, although relatively simple logic I enjoyed the added level of polish it added to our app.
+Again, although relatively simple logic I enjoyed the polish it added to our app.
 
 ## Challenges
 
