@@ -1,3 +1,9 @@
+![ga](https://cloud.githubusercontent.com/assets/20629455/23824362/2c9817c2-066d-11e7-8988-7b1eefc6d628.jpg)
+![wdi](https://cloud.githubusercontent.com/assets/20629455/23824363/2ddeaa7e-066d-11e7-8630-f7c890c9f1c1.png)
+
+___
+<br>
+
 # GA WDI24 Project 3 - [team:up](http://bytemeteamup.herokuapp.com)
 
 ## Local Setup
@@ -9,21 +15,25 @@
 
 ### Back-end
 
-Node.js, Express.js, gulp.js, MongoDB, Mongoose, JSON web tokens, Bcrypt, ES6.
+Node.js, Express.js, Mongoose, JSON web tokens, Bcrypt, MongoDB,  gulp.js.
 
 ### Front-end
 
-JavaScript, jQuery, AngularJS, HTML, CSS, SCSS, Materialize, AJAX requests, User Authentication.
+JavaScript, jQuery, AngularJS, HTML, CSS, SCSS, Materialize.
 
 ## Brief
 
-We were challenged as a group to develop an app with an AngularJS front end, a Node.js / Express.js back end and a MongoDB database.
+As a 5 person group we were challenged to develop an app with an AngularJS front end, a Node.js / Express.js back end and a MongoDB database.
 
-As an MVP, the app needed to be served by our own Express.js web server, allow user authentication via JSON Web Tokens, Bcrypt and our own Web API linked via Mongoose to a MongoDB database and use at least two models with restful routes from an Express.js API outputting JSON.
+As an MVP, the app needed to:
+
+- Be served by our own Express.js web server. 
+- Allow user authentication via JSON Web Tokens, Bcrypt and our own Web API linked via Mongoose to a MongoDB database.
+-  Use at least two models with restful routes from an Express.js API outputting JSON.
 
 ## Overview
 
-After considering a few ideas, we decided to build a platform where a lead freelancer would be able to build a team of other freelancers to help them tackle a project which required more time or skills than the lead freelancer could handle alone. 
+After considering a few ideas, we decided to build a platform where a lead freelancer would be able to build a team of other freelancers to help them tackle a project which required more time or skills than the lead freelancer could provide. 
 
 The lead freelancer would be able to post the job and accept or reject applicants from other freelancers on the platform (of varying skill sets) until the team was fully populated. In this way the lead freelancer could construct their own small agency from project to project and capture all the benefits that come with working in a team a diverse set of skills.
 
@@ -63,11 +73,11 @@ We also decided that the freelancers would be organised into 9 different types (
 
 <img width="1269" alt="screen shot 2017-02-06 at 09 58 18" src="https://cloud.githubusercontent.com/assets/20629455/23797183/78bfd32e-0596-11e7-9575-b98379ad507a.png">
 
-## Favourite parts
+## Favourite Bits
 
 ### Dynamic application buttons
 
-Once the user presses apply on a listed vacancy the button is disabled and it's inner text is changed from "Apply" to "Applied".
+Once the user clicks "Apply" on a listed vacancy the button is disabled and it's inner text is changed from "Apply" to "Applied".
 
 This was achieved by using AngularJS's $event object and although the logic is relatively simple I feel the end result adds a good level of polish to our app.
 
@@ -77,17 +87,14 @@ The user is able to select the required roles for their new project.  Once a rol
 
 This was achieved with AngularJS's two-way data binding. The project object (which is later saved to the database) is being directly interacted with by the user, once a role is selected the view automatically updates to the change in the data / model.
 
-Again, although relatively simple logic I feel enjoyed the added level of polish it added to our app.
+Again, although relatively simple logic I enjoyed the added level of polish it added to our app.
 
 ## Challenges
 
-The biggest challenge for our team was how to handle applications. This included how to store and display vacancies, filed positions, active applications and rejected applications. In hindsight we should have used more than two models (Freelancer and Project) however we managed to overcome this challenge with some creative Mongoose models and use of AngularJS's two-way data binding.
-
-## Wins
-
-Producing a polished app dispite this being our first team project, our first AngularJS app and our first Materialize App.
+The biggest challenge for our team was how to handle applications. This included how to store and display vacancies, filed positions, active applications and rejected applications. In hindsight we could have used more than two models (Freelancer and Project) however we managed to overcome this challenge with some creative Mongoose models and use of AngularJS's two-way data binding.
 
 ## Known issues to be addressed
+
 1. Login is currently buggy.
 2. Sometime our views do not correctly display the correct text given the data they are representing. For example if there are currently no vacancies on a project then "no vacancies" should be displayed.
 3. Our model titles are being used as display information. This leads to camel case text being displayed instead of properly formatted words (e.g. UIDeveloper vs UI Developer").
